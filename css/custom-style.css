@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Background Color */
+    --primary-color: #e81922;
+    --secondary-color: #333333;
+    --bg-black: #111111;
+    --bg-dark: #1C1819;
+    --bg-white: #fff;
+    --bg-gray: #e5e5e5;
+
+    /* Text Color */
+    --primary-text: #e81922;
+    --text-white: #fff;
+    --text-black: #111111;
+
+    /* Font Family */
+    --primary-font: 'Ubuntu', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--secondary-font);
+    background-color: var(--bg-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1 Custom CSS */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+section {
+    padding: 100px 0;
+}
+
+.main-btn {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 27px;
+    border: 1px solid var(--primary-color); 
+    color: var(--primary-text);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+    background:linear-gradient(to right, var(--primary-color) 50%, transparent 50%);
+    background-size:200% 100%;
+    background-position: right bottom;
+    transition:all 0.5s ease-out;
+}
+.main-btn:hover {
+    color: var(--text-white);  
+    background-position: left bottom; 
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--text-black);
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+} 
+
+h1 span {
+    color: var(--primary-color);
+}
+h2 {
+    color: var(--primary-color);
+}
+p {
+    color: var(--text-black);
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.header_wrapper .navbar {
+    padding: 15px 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 10px;
+}
+.header_wrapper .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--text-black);
+    display: inline-block;
+}
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+    color: var(--primary-text);
+}
+.about_wrapper {
+    background-color: var(--bg-gray);
+    padding-bottom: 130px;
+}
+
+.about_wrapper .card {
+    z-index: 10;
+    right: -30%;
+    top: 45%;
+}
+
+.menu_wrapper {
+    width: 100%;
+    height: auto;
+    background-image: url('https://cdn.profoto.com/cdn/05238cd/globalassets/tips-and-tricks/profoto-c1-plus-food-photography-anders-hannola.jpg?width=1200&quality=75&format=jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: var(--bg-dark);
+}
+
+.menu_wrapper .row {
+    padding-top: 400px;
+}
+
+.menu_wrapper .card {
+    background-color: var(--secondary-color);
+}
+
+.menu_wrapper .card h3,
+.menu_wrapper .card p {
+    color: var(--text-white);
+}
+
+.menu_wrapper .card h3 span {
+    background-color: var(--primary-color);
+    width: 70px;
+    height: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
